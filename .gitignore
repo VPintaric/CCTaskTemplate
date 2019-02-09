@@ -1,0 +1,12 @@
+*
+
+!*/
+
+!/app/**
+
+!/external/**
+
+!CMakeLists.txt
+
+!.gitignore
+!.gitmodules
