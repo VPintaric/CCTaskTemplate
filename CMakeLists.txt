@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.11.2)
 
-project(CCTask
-        LANGUAGES CXX)
+project(CCTask)
 
 find_package(OpenGL REQUIRED)
 

@@ -1,6 +1,6 @@
 #include <logging.hpp>
 
-#include <GLFW/glfw3.h>
+#include <gl_include.hpp>
 
 #include <cstdio>
 #include <cassert>
@@ -30,6 +30,12 @@ int main() {
     glfwMakeContextCurrent( window );
     glfwSetKeyCallback( window, keyCallback );
     glfwSwapInterval( 1 );
+
+    {
+        LOG( "Loading OpenGL API functions..." );
+        auto gladSuccessful = gladLoadGLLoader(( GLADloadproc ) glfwGetProcAddress );
+        assert( gladSuccessful );
+    }
 
     glClearColor( 0.f, 0.f, 0.f, 0.f );
     glClear( GL_COLOR_BUFFER_BIT );

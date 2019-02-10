@@ -1,4 +1,9 @@
 add_executable(CCTask
+        src/glad/glad.c
+        src/glad/glad.h
+        src/glad/khrplatform.h
+        src/gl_include.hpp
+
         src/main.cpp
         src/logging.hpp
         # TODO: Add source files here
