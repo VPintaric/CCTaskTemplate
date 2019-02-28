@@ -31,4 +31,5 @@ Build the `CCTask` target by using `make`.
 `CCTask` executable should now be found in `build/app` directory - try running it, you should see an empty window pop up on your screen.
 
 **`cd app`**
+
 **`./CCTask`**
